@@ -56,7 +56,7 @@ const int NUM_BUTTONS = 16;
 const int xAxisPinX = A0;   // X軸をA0に接続
 const int xAxisPinY = A1;   // Y軸をA1に接続
 const int xAxisPinZ = A2;   // Z軸をA2に接続
-const int xAxisPinRx = A3;  // Rx軸をA2に接続
+const int xAxisPinRx = A3;  // Rx軸をA3に接続
 
 void setup() {
   // 0〜13,A4,A5ピンをプルアップ入力に設定
