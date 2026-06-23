@@ -8,9 +8,10 @@ BVE向けArduino Leonardo (Micro) Joystick化スケッチです
 > 4. プラグイン設定(デジタル入力)：スイッチを配線後、プラグイン内の所望スイッチ(OFF表示)を選択しスイッチを押下し設定(ピン番号を反映)してください。  
 
 ### ArduinoIDEでのスケッチ書き込み方法：Mheironimus/ArduinojoystickLibraryを使用します
-> 1. ライブラリをダウンロードします -> https://github.com/MHeironimus/ArduinoJoystickLibrary/archive/master.zip  
-> 2. Arduino IDE を開き、 スケッチ > ライブラリをインクルード > .ZIP形式のライブラリをインストール を選択し、上記ファイルを選択します  
-> 3. ボード選択窓から「Arduino Leonardo (もしくはMicro)」表示されない場合は、ツール > ボード > Arduino AVR Boards > Arduino Leonardo または Arduino Micro を選択します。  
+> 1. ライブラリをダウンロードします -> https://github.com/MHeironimus/ArduinoJoystickLibrary/archive/master.zip
+> 2. (ライブラリの詳細はこちら https://github.com/MHeironimus/ArduinoJoystickLibrary/)
+> 3. Arduino IDE を開き、 スケッチ > ライブラリをインクルード > .ZIP形式のライブラリをインストール を選択し、上記ファイルを選択します  
+> 4. ボード選択窓から「Arduino Leonardo (もしくはMicro)」表示されない場合は、ツール > ボード > Arduino AVR Boards > Arduino Leonardo または Arduino Micro を選択します。  
 > 3. 本スケッチを書き込みます  
 
 ### 注意事項
