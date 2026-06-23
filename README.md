@@ -1,5 +1,5 @@
 # ArduinoJoystickContorllerForBVE
-BVE向けArduino Leonardo (Micro) Joystick化スケッチ
+BVE向けArduino Leonardo (Micro) Joystick化スケッチです
 
 ## 使い方 
 > 1. アナログ入力：A0～A3 ポテンショの電源端子を5V、GNDをGNDに、中位の信号線をA0～A3に入力します。  
@@ -16,7 +16,9 @@ BVE向けArduino Leonardo (Micro) Joystick化スケッチ
 ### 注意事項
 > [!WARNING]
 > 1. デジタル入力は全てPULL_UPとしています。OUTPUTに変更した場合、スイッチの押下でショートし破損しますので注意してください。  
-> 2. このスケッチはマトリクス入力には対応していません、最大16入力となります。  
+> 2. このスケッチはマトリクス入力には対応していません、最大16入力となります。
+> 3. `改変再配布も制限なく使用していただいて構いませんが、ご使用は自己責任でお願いいたします。`  
+> 4. `本内容による損害等については一切の責任を負いかねます。`   
 
 ### その他
 > [!NOTE]
