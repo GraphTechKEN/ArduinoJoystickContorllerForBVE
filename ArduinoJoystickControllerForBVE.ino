@@ -25,14 +25,14 @@
 
 #include <Joystick.h>
 
-// アナログ軸数(4)、デジタルボタン数(16)
+// クラスのインスタンス化、アナログ入力軸数(4)、スイッチ入力数(16)
 Joystick_ Joystick(JOYSTICK_DEFAULT_REPORT_ID, JOYSTICK_TYPE_JOYSTICK,
                    16, 0,                   // ボタン数, ハットスイッチ数
                    true, true, true, true,  // X, Y, Z, Rx 軸を有効化
                    false, false, false,     // Ry, Rz, Rudder 軸を無効化
                    false, false, false);    // スロットル、アクセル、ブレーキ無効
 
-// C#側の変数名（A, B1, B2, B3...）に合わせてArduinoのデジタルピンを定義
+// Arduinoのデジタルピンを定義
 const int PIN_A = 0;       // D0 -> switchA
 const int PIN_B1 = 1;      // D1 -> switchB1
 const int PIN_B2 = 2;      // D2 -> switchB2
@@ -47,11 +47,10 @@ const int PIN_I = 10;      // D10 -> switchI
 const int PIN_J = 11;      // D11 -> switchJ
 const int PIN_K = 12;      // D12 -> switchK
 const int PIN_L = 13;      // D13 -> switchL
-const int PIN_Horn1 = 22;  // 22(A4) -> switchHorn1
-const int PIN_Horn2 = 23;  // 23(A5) -> switchHorn2
+const int PIN_Horn1 = 22;  // D22(A4) -> switchHorn1
+const int PIN_Horn2 = 23;  // D23(A5) -> switchHorn2
 
-
-// 割り当て用配列（インデックス 0=A, 1=B1, 2=B2... となるように並べる）
+// 割り当て用配列
 const int buttonPins[] = { PIN_A, PIN_B1, PIN_B2, PIN_C1, PIN_C2, PIN_D, PIN_E, PIN_F, PIN_G, PIN_H, PIN_I, PIN_J, PIN_K, PIN_L, PIN_Horn1, PIN_Horn2 };
 const int NUM_BUTTONS = 16;
 
