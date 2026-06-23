@@ -9,7 +9,7 @@
 * 1.ライブラリをダウンロードします -> https://github.com/MHeironimus/ArduinoJoystickLibrary/archive/master.zip
 * 2.Arduino IDE を開き、 スケッチ > ライブラリをインクルード > .ZIP形式のライブラリをインストール を選択し、上記ファイルを選択します
 * 3.ボード選択窓から「Arduino Leonardo (もしくはMicro)」表示されない場合は、ツール > ボード > Arduino AVR Boards > Arduino Leonardo または Arduino Micro を選択します。
-* 3.本スケッチを書き込みます
+* 4.本スケッチを書き込みます
 *
 * 注意事項：
 * 1.デジタル入力は全てPULL_UPとしています。OUTPUTに変更した場合、スイッチの押下でショートし破損しますので注意してください。
