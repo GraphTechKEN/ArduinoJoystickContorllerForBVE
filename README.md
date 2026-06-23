@@ -1,2 +1,23 @@
 # ArduinoJoystickContorllerForBVE
 BVE向けArduino Leonardo (Micro) Joystick化スケッチ
+
+## 使い方 
+> 1. アナログ入力：A0～A3 ポテンショの電源端子を5V、GNDをGNDに、中位の信号線をA0～A3に入力します。  
+> 2. デジタル入力：D0～D13,A4,A5が対応、スイッチの片側の信号線をD0～D13,A4,A5に入力、もう片側をGNDに接続します。  
+> 3. プラグイン設定(アナログ入力)：A0:X軸、A1:Y軸、A2:Z軸、A3:Rx軸に対応します。それぞれプラグインで方向としきい値を調整してください。  
+> 4. プラグイン設定(デジタル入力)：スイッチを配線後、プラグイン内の所望スイッチ(OFF表示)を選択しスイッチを押下し設定(ピン番号を反映)してください。  
+
+### ArduinoIDEでのスケッチ書き込み方法：Mheironimus/ArduinojoystickLibraryを使用します
+> 1. ライブラリをダウンロードします -> https://github.com/MHeironimus/ArduinoJoystickLibrary/archive/master.zip  
+> 2. Arduino IDE を開き、 スケッチ > ライブラリをインクルード > .ZIP形式のライブラリをインストール を選択し、上記ファイルを選択します  
+> 3. ボード選択窓から「Arduino Leonardo (もしくはMicro)」表示されない場合は、ツール > ボード > Arduino AVR Boards > Arduino Leonardo または Arduino Micro を選択します。  
+> 3. 本スケッチを書き込みます  
+
+### 注意事項
+> [!WARNING]
+> 1. デジタル入力は全てPULL_UPとしています。OUTPUTに変更した場合、スイッチの押下でショートし破損しますので注意してください。  
+> 2. このスケッチはマトリクス入力には対応していません、最大16入力となります。  
+
+### その他
+> [!NOTE]
+> スケッチに余裕がありますので、シリアル出力など拡張できるかもしれません。マトリクス回路やIOエキスパンダなどで拡張できるかもしれませんが、入出力などのピン設定をよく確認してください。  
